@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 3001
 // Syncing all the models at once.
 conn.sync({ force: false }).then(() => {
   initiateTables();
-  server.listen(3001, () => {
+  server.listen(PORT, () => {
     console.log("Paso Los Check De Seguridad...✔✔✔");
     console.log("Servidor Online ✔ En Puerto 3001 🌍 ESTADO OK ✔ 😎");
   });
